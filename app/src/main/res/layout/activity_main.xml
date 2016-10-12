@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:background="@color/common_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_bar_normal_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/button1"
+            android:text="首页"
+            android:background="@drawable/main_bottom_item_bg"
+            android:drawableTop="@drawable/main_page_bg"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/button2"
+            android:text="购物车"
+            android:layout_weight="1"
+            android:background="@drawable/main_bottom_item_bg"
+            android:drawableTop="@drawable/shoping_cart_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/button3"
+            android:text="我的爱购"
+            android:layout_weight="1"
+            android:background="@drawable/main_bottom_item_bg"
+            android:drawableTop="@drawable/person_center_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <!-- 上面的布局方式 -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bottom" >
+
+
+
+    </FrameLayout>
+</RelativeLayout>
